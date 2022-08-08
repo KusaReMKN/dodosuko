@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ドドスコ ジェネレータ</title>
+<meta name="description" content="配列 {&quot;ドド&quot;, &quot;スコ&quot;} からランダムに要素を出力し続け、『その並びが「ドドスコスコスコ」を 3 回繰り返したもの』に一致したときに「ラブ注入♡」と出力して終了するプログラムです。">
+<!-- twitter card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@KusaReMKN">
+<meta property="og:url" content="https://kusaremkn.github.io/dodosuko/">
+<meta property="og:title" content="ドドスコ ジェネレータ">
+<meta property="og:description" content="配列 {&quot;ドド&quot;, &quot;スコ&quot;} からランダムに要素を出力し続け、『その並びが「ドドスコスコスコ」を 3 回繰り返したもの』に一致したときに「ラブ注入♡」と出力して終了するプログラムです。">
+<meta property="og:image" content="https://kusaremkn.github.io/dodosuko/img/twittercard.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="./css/dodosuko.css" rel="stylesheet">
+<script src="./js/dodosuko.js" defer></script>
+</head>
+<body>
+<h1>ドドスコ ジェネレータ</h1>
+<p>
+配列 {&quot;ドド&quot;, &quot;スコ&quot;} からランダムに要素を出力し続け、『その並びが「ドドスコスコスコ」を 3 回繰り返したもの』に一致したときに「ラブ注入♡」と出力して終了するプログラムです。
+</p>
+<p>
+元凶となったツイートは<a href="https://twitter.com/Sheeeeepla/status/1554028833942441984">こちら</a>です。
+</p>
+<button id="play">ドドスコする</button>
+<div>
+<label>
+<input type="checkbox" id="sound">
+音声を再生する
+(チェックを外すと爆速になります)
+</label>
+</div>
+<div>
+<label>
+<input type="checkbox" id="equal">
+「ドド」と「スコ」の出現確率を 1:1 にする
+(チェックを外すと 1:2 になります)
+</label>
+</div>
+<div class="next"></div>
+<textarea id="output" placeholder="ここにドドスコが表示されます" readonly></textarea>
+<div class="next"></div>
+<p><output id="stat"></output></p>
+<button id="copy">ドドスコをコピーする</button>
+<button id="tweet">結果をツイートする</button>
+<hr>
+<a href="https://github.com/KusaReMKN/dodosuko">GitHub</a>
+</body>
+</html>
